@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Damion');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+/*==================================common=========================*/
+html,
+body {
+height: 100%;
+font-family: Lato;
+font-size: 15px;
+}
+/*========================header====================*/
+.navbar-default a.navbar-brand {
+font-family: Damion;
+color: hsl(0, 0%, 100%);
+font-size: 3.3em;
+}
+.navbar-default a.navbar-brand:hover {
+color: hsl(0, 0%, 100%);
+}
+.navbar-default {
+border-color: transparent;
+}
+.navbar {
+background: transparent;
+}
+.navbar-default .navbar-nav li a {
+color: hsl(0, 0%, 100%);
+font-size: 1.1em;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+ color: hsl(0, 0%, 100%);
+ }
+/*=================== carousel=====================*/
+.full-screen {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.carousel-indicators .active {
+background: hsl(189, 54%, 65%);
+width: 20px;
+height: 20px;
+}
+.carousel-indicators li {
+width: 20px;
+height: 20px;
+}
+.carousel-caption {
+text-shadow: none;
+top: 41%;
+}
+/*=== flaxbox ===*/
+.flex-container {
+display: flex;
+align-items: flex-start;
+flex-flow: column wrap;
+border-radius: 4px;
+background-color:  rgba(255, 255, 255, 0.3);
+height: 13em;
+}
+.flex-item {
+display: flex;
+color: hsl(189, 54%, 65%);
+font-size: 4em;
+font-weight: 300;
+line-height: 0.90;
+}
+.one {
+align-items: flex-end;
+flex: 1 1 0;
+order: 1; /* Первый блок */
+margin-left: auto;
+justify-content: flex-end;
+}
+.two {
+margin-bottom: 1px; /* Отступ снизу */
+flex: 1 1 0;
+order: 2; /* Второй блок */
+margin-left: auto;
+justify-content: flex-end;
+}
+.three {
+align-items: center;
+flex-basis: 100%;
+order: 3; /* Третий блок */
+font-size: 11em;
+font-weight: 900;
+line-height: 0.500;
+}
+/*=== /flaxbox ===*/
+
+/*================== services, about, work, contacts common ================*/
+.services, .about, .work, .contacts {
+width: 100%;
+padding: 7em;
+}
+.h3, h3 {
+font-size: 4.3em;
+font-weight: 300;
+line-height: 1.6;
+color: hsl(0, 0%, 100%);
+text-transform: uppercase;
+}
+p {
+color: hsl(0, 0%, 100%);
+}
+.opis {
+font-size: 1.1em;
+margin-bottom: 3em;
+}
+.h4, h4 {
+font-size: 1.5em;
+font-weight: 300;
+line-height: 1.933;
+text-transform: uppercase;
+color: hsl(0, 0%, 100%);
+}
+.thumbnail .caption {
+padding: 1px;
+}
+/*======================== services =======================*/
+.services{
+background: hsl(357, 41%, 49%) url("img/fonServices.png") no-repeat;
+background-size: cover;
+}
+.lead {
+font-size: 1.4em;
+font-weight: 400;
+line-height: 1;
+text-transform: uppercase; 
+}
+.lead span {
+color: hsl(356, 68%, 77%);
+}
+.cards {
+margin-top: 5em;
+background-color: hsla(356, 52%, 55%, 0.8);
+color: hsl(0, 0%, 100%);
+border: none;
+text-align: center;
+}
+.cards p {
+font-size: .9em;
+}
+.round {
+width: 8.5em;
+height: 8.5em;
+border-radius: 50% 50%;
+margin: 3em auto 1em;
+padding-top: 2em;
+background-color: hsl(0, 0%, 100%);
+box-shadow: 0 0 0 .4em hsl(356, 52%, 55%),
+            0 0 0 .7em hsl(0, 0%, 100%);
+}
+/*============================ about ============================*/
+.about {
+background: hsl(307, 10%, 36%) url("img/fonAbout.png") no-repeat;
+background-size: cover; 
+}
+.meet {
+color: hsl(0, 0%, 100%);
+text-transform: uppercase;
+text-align: center;
+font-size: 1.7em;
+font-weight: 900;
+line-height: 2.3;
+margin-top: 1em; 
+}
+.meet span {
+position: relative;
+background-color: hsl(86, 47%, 61%);
+padding: .4em 1.7em;
+border-radius: .2em;
+}
+.meet span::before {
+content: '';
+position: absolute;
+width: .8em;
+height: .8em;
+background: hsl(86, 47%, 61%);
+transform: rotate(45deg); 
+bottom: -.4em;
+left: 5.3em;
+}
+.flexContainer {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.item1, .item2, .item3, .item4 {
+margin: 0 1em;
+flex-grow: 1;
+}
+.cardsTeam {
+margin-top: 3em;
+background-color: hsla(309, 10%, 27%, 0.5);
+color: hsl(307, 13%, 75%);
+border: none;
+text-align: center;
+}
+.cardsTeam p {
+color: hsl(86, 47%, 61%);
+}
+.cardsTeam:hover {
+background-color: rgba(77, 63, 75, 0.8);
+}
+.roundTeam {
+width: 10em;
+height: 10em;
+border-radius: 50%;
+margin: 2em auto .7em;
+background-color: hsl(0, 0%, 100%);
+box-shadow: 0 0 0 0.4em hsl(306, 13%, 58%);
+}
+.roundTeam:hover {
+box-shadow: 0 0 0 0.4em hsl(356, 67%, 62%);
+}
+.social {
+font-size: 1.5em;
+padding: .6em 0;
+}
+.social i {
+background-color: hsl(306, 13%, 58%);
+width: 1.7em;
+height: 1.7em;
+border-radius: 50% 50%;
+margin: .1em;
+line-height: 1.7em;
+}
+.social a {
+color: hsl(0, 0%, 100%);
+line-height: 1.5em;
+}
+/*=============================== work ==========================*/
+.work {
+background: hsl(307, 10%, 36%) url("img/fonWork.png") no-repeat;
+background-size: cover;
+}
+.portfoliFiltr {
+color: #fff;
+}
+.portfoliFiltr span {
+line-height: 3em;
+font-size: 1.25em;
+font-weight: 700;
+}
+.gallery {
+position: relative;
+text-align: center;
+color: hsl(0, 0%, 45%);
+background: hsl(0, 0%, 93%);
+border: none;
+padding: 0;
+border-radius: 0;
+}
+.gallery .caption::before {
+content: '';
+position: absolute;
+width: 1.5em;
+height: 1.5em;
+background: hsl(0, 0%, 93%);
+transform: rotate(45deg); 
+bottom: 1.5em;
+left: 44%;
+}
+.item11, .item22, .item33, .item44 {
+margin: 0 1em;
+}
+/*========================== contacts ===========================*/
+.contacts {
+position: relative;
+background: hsl(307, 10%, 36%) url("img/fonContacts.png") no-repeat;
+background-size: cover;
+color: hsl(0, 0%, 100%);
+}
+.opic {
+margin-bottom: 4em;
+}
+.itemContact {
+padding: 1em;
+}
+.map {
+margin: 2em 3em 0 0;
+}
+.fidback textarea {
+margin-top: 1em;
+}
+.fidback .btn {
+margin: 1em auto;
+border-radius: 4px;
+width: 15em;
+height: 3em;
+}
+.backg {
+background-color: hsl(170, 23%, 52%);
+color: #fff;
+border: none;
+}
+.socFooter {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+padding-top: 1.5em;
+background: hsl(170, 23%, 52%);
+text-align: center;
+height: 7em;
+}
+.socFooter a {
+font-size: 1.7em;
+color: hsl(0, 0%, 100%);
+padding: .5em;
+}
+.socFooter i {
+background-color: hsl(170, 38%, 65%);
+width: 2em;
+height: 2em;
+border-radius: 50% 50%;
+margin: .1em;
+line-height: 2em;
+}
+/*==== media ===============================================*/
+
+ @media (max-width: 1470px ) {
+	.flex-item {
+	font-size: 3.5em;
+	line-height: 0.90;
+	}
+	.three {
+	font-size: 6em;
+	}
+ }
+ @media (max-width: 990px ) {
+ 	.flex-item {
+	font-size: 2.5em;
+	line-height: 0.90;
+	}
+	.three {
+	font-size: 4em;
+	}
+ }
+ @media (max-width: 600px ) {
+ 	.flex-item {
+	font-size: 1.5em;
+	line-height: 0.90;
+	}
+	.three {
+	font-size: 2em;
+	}
+	.text-center {
+	font-size: 3em;
+	}
+	.opis {
+	font-size: 1.3em;
+	}
+	.lead {
+	font-size: 1.4em;
+	}
+	.map {
+	margin: 0;
+	}
+ }
+ @media (max-width: 412px ) {
+ 	.flex-item {
+	font-size: 1.3em;
+	line-height: 0.90;
+	}
+	.three {
+	font-size: 1.7em;
+	}
+	.text-center {
+	font-size: 2em;
+	}
+	.opis {
+	font-size: 1em;
+	}
+	.lead {
+	font-size: 1.1em;
+	}
+	.meet {
+	font-size: 1.2em;
+	}
+ }
+ @media (max-width: 360px ) {
+  	.text-center {
+	font-size: 1.2em;
+	}
+	.opis {
+	font-size: .7em;
+	}
+	.lead {
+	font-size: 1em;
+	}
+	.meet {
+	font-size: .7em;
+	}
+	.socFooter a {
+	font-size: 1.2em;
+}
+ }
