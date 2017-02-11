@@ -52,19 +52,19 @@ height: 20px;
 text-shadow: none;
 top: 41%;
 }
-/*=== flaxbox ===*/
+/*=== flexbox ===*/
 .flex-container {
 display: flex;
 align-items: flex-start;
 flex-flow: column wrap;
 border-radius: 4px;
 background-color:  rgba(255, 255, 255, 0.3);
-height: 13em;
+height: 12em;
 }
 .flex-item {
 display: flex;
 color: hsl(189, 54%, 65%);
-font-size: 4em;
+font-size: 3.8em;
 font-weight: 300;
 line-height: 0.90;
 }
@@ -86,11 +86,11 @@ justify-content: flex-end;
 align-items: center;
 flex-basis: 100%;
 order: 3; /* Третий блок */
-font-size: 11em;
+font-size: 9em;
 font-weight: 900;
 line-height: 0.500;
 }
-/*=== /flaxbox ===*/
+/*=== /flexbox ===*/
 
 /*================== services, about, work, contacts common ================*/
 .services, .about, .work, .contacts {
@@ -364,6 +364,9 @@ line-height: 2em;
 	}
  }
  @media (max-width: 412px ) {
+     .flex-container {
+         height: 7em;
+     }
  	.flex-item {
 	font-size: 1.1em;
 	line-height: 0.90;
@@ -381,7 +384,7 @@ line-height: 2em;
 	font-size: 1.1em;
 	}
 	.meet {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	}
  }
  @media (max-width: 360px ) {
