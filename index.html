@@ -33,17 +33,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">acnostia</a>
+                        <a class="navbar-brand" href="#Home" rel='m_PageScroll2id'>acnostia</a>
                     </div>
                 </div>
                 <!-- Collect the nav links -->
                 <div class="collapse navbar-collapse col-md-3 col-md-offset-1" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#Home">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#Services">Services</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Work">Work</a></li>
-                        <li><a href="#Contacts">Contacts</a></li>
+                        <li><a href="#Home" rel='m_PageScroll2id'>Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#Services" rel='m_PageScroll2id'>Services</a></li>
+                        <li><a href="#About" rel='m_PageScroll2id'>About</a></li>
+                        <li><a href="#Work" rel='m_PageScroll2id'>Work</a></li>
+                        <li><a href="#Contacts" rel='m_PageScroll2id'>Contacts</a></li>
                     </ul>
                     </div><!-- /.navbar-collapse -->
                     </div><!-- /.row -->
@@ -272,61 +272,61 @@
             <span class="forPortfolio">PORTFOLIO</span>
         </div>
         <div class="col-md-6 col-md-offset-2">
-        <ul class="controls">
-            <li class="filters">All</li>
-            <li class="filters">Photography</li>
-            <li class="filters">Logo</li>
-            <li class="filters">Design</li>
-            <li class="filters">Web design</li>
-        </ul>
+            <ul class="controls">
+                <li class="control" data-filter="all">All</li>
+                <li class="control" data-filter=".Photography">Photography</li>
+                <li class="control" data-filter=".Logo">Logo</li>
+                <li class="control" data-filter=".Design">Design</li>
+                <li class="control" data-filter=".Web">Web</li>
+            </ul>
         </div>
     </div>
-    <!--/filtr-->
+    
     <hr>
     <div class="mixContainer">
         <!--cardsOneLine-->
         <div class="row flexContainer">
-            <!--card1-->
-            <div class="item11">
-                <div class="thumbnail gallery">
-                    <img src="https://unsplash.it/g/260/230" alt="..." class="img-responsive">
-                    <div class="caption">
-                        <h5>Aenean a elit</h5>
+                <!--card1-->
+                <div class="mix Photography">
+                    <div class="thumbnail gallery">
+                        <img src="https://unsplash.it/g/260/230" alt="..." class="img-responsive">
+                        <div class="caption">
+                            <h5>Aenean a elit</h5>
+                        </div>
                     </div>
-                </div>
                 </div><!--/card1-->
                 <!--card2-->
-                <div class="item22">
+                <div class="mix Logo">
                     <div class="thumbnail gallery">
                         <img src="https://unsplash.it/260/230" alt="..." class="img-responsive">
                         <div class="caption">
                             <h5>Aliquam</h5>
                         </div>
                     </div>
-                    </div><!--/card2-->
+                </div><!--/card2-->
                     <!--card3-->
-                    <div class="item33">
+                    <div class="mix Logo">
                         <div class="thumbnail gallery">
                             <img src="https://unsplash.it/260/230/?random" alt="..." class="img-responsive">
                             <div class="caption">
                                 <h5>Suspendisse libero</h5>
                             </div>
                         </div>
-                        </div><!--/card3-->
+                    </div><!--/card3-->
                         <!--card4-->
-                        <div class="item44">
+                        <div class="mix Photography">
                             <div class="thumbnail gallery">
                                 <img src="https://unsplash.it/260/230" alt="..." class="img-responsive">
                                 <div class="caption">
                                     <h5>Maecenas fringilla</h5>
                                 </div>
                             </div>
-                            </div><!--/card4-->
+                        </div><!--/card4-->
                             </div><!--cards-->
                             <!--cardsThoLine-->
                             <div class="row flexContainer">
                                 <!--card1-->
-                                <div class="item11">
+                                <div class="mix Web">
                                     <div class="thumbnail gallery">
                                         <img src="https://unsplash.it/260/230/?random" alt="...">
                                         <div class="caption">
@@ -335,7 +335,7 @@
                                     </div>
                                     </div><!--/card1-->
                                     <!--card2-->
-                                    <div class="item22">
+                                    <div class=" mix Web">
                                         <div class="thumbnail gallery">
                                             <img src="https://unsplash.it/g/260/230/" alt="...">
                                             <div class="caption">
@@ -344,7 +344,7 @@
                                         </div>
                                         </div><!--/card2-->
                                         <!--card3-->
-                                        <div class="item33">
+                                        <div class="mix Design">
                                             <div class="thumbnail gallery">
                                                 <img src="https://unsplash.it/260/230/?random" alt="...">
                                                 <div class="caption">
@@ -353,7 +353,7 @@
                                             </div>
                                             </div><!--/card3-->
                                             <!--card4-->
-                                            <div class="item44">
+                                            <div class="mix Web">
                                                 <div class="thumbnail gallery">
                                                     <img src="https://unsplash.it/260/230/" alt="...">
                                                     <div class="caption">
@@ -363,6 +363,7 @@
                                             </div><!--/card4-->
                                         </div><!--/cards-->
                                     </div><!--mixContainer-->
+                                    <!--/filtr-->
                                 </div><!--=== /work ===-->
 <!--=== contacts ===-->
 <div id="Contacts"></div>
@@ -414,12 +415,20 @@
         </div>
         </div><!--/row-->
         </div><!--=== /contacts ===-->
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="myJS.js"></script>
+
+        <script src="js/myJS.js"></script>
+        <!--pagescroll2id-->
+        <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+        <!--mixitup-->
+        <script src="js/mixitup.min.js"></script>
+
         <!--Live reload удалить после разработки-->
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
     </body>
 </html>

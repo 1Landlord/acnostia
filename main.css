@@ -20,7 +20,7 @@ color: hsl(0, 0%, 100%);
 border-color: transparent;
 }
 .navbar {
-background: transparent;
+background-color: hsla(309, 10%, 27%, 0.7);
 }
 .navbar-default .navbar-nav li a {
 color: hsl(0, 0%, 100%);
@@ -186,6 +186,7 @@ left: 5.3em;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+margin-bottom: 3em;
 }
 .item1, .item2, .item3, .item4 {
 margin: 0 1em;
@@ -242,6 +243,7 @@ list-style-type: none;
 padding: 10px;
 color: #fff;
 line-height: 1em;
+cursor: pointer;
 }
 .forPortfolio {
 line-height: 2em;
@@ -268,7 +270,7 @@ transform: rotate(45deg);
 bottom: 1.5em;
 left: 44%;
 }
-.item11, .item22, .item33, .item44 {
+.Photography, .Logo, .Design, .Web {
 margin: 0 1em;
 }
 /*========================== contacts ===========================*/

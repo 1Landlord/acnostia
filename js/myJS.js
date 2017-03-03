@@ -1,3 +1,5 @@
+//carousel
+
 var $item = $('.carousel .item'); 
 var $wHeight = $(window).height();
 $item.eq(0).addClass('active');
@@ -23,3 +25,15 @@ $('.carousel').carousel({
   interval: 6000,
   pause: "false"
 });
+
+ //pagescroll2id
+$(document).ready(function() {
+    $("a[rel='m_PageScroll2id']").mPageScroll2id({
+      
+    });
+    // mixitup
+    var containerEl = document.querySelector('.mixContainer');
+    var mixer = mixitup(containerEl);
+});
+
+
